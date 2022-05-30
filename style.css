@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(214, 213, 213);
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.profile {
+    background-color: gray;
+    margin-right: 1rem;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 2rem);
+}
+
+aside {
+    background-color: darkgray;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quadrato{
+    background-color: blue;
+    width: 70%;
+    height: 10%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form{
+    background-color: lightcoral;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cerca{
+    height: 2rem;
+
+}
+
+.botton{
+    height: 2rem;
+    width: 4rem;
+}
+
+.cerchio{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    align-self:flex-end;
+    justify-self: flex-end;
+}
+
+@media screen and (max-width:360px) {
+    
+    .container{
+        display: flex;
+    }
+
+    nav, aside, main, .form-container{
+        display: block;
+        background-color: white;
+    }
+
+    .profile{
+        
+    }
+
+}
